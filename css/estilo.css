@@ -1,0 +1,847 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+/*Dos clases base contenedor y fila*/
+
+.contenedor{
+	position: relative;
+	margin: auto;
+	width: 100%;
+	height: auto;
+}
+
+.fila{
+	position: relative;
+	margin: auto;
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+/*Color fondo*/
+
+.fondo1{
+	background: #fffef5;
+}
+/*fuentes*/
+
+.parrafoinicial{
+	text-align: center;
+	font-size: 30px;
+	padding: 5px;
+}
+.fontfooter1{
+	text-align: center;
+	font-size: 23px;
+	padding: 5px;
+}
+.fontfooter2{
+	text-align: center;
+	font-size: 18px;
+}
+
+
+
+/*agrupar elementos comunes de los %*/
+[class*="col-"]{
+	/*border: 1px solid black;*/
+	float: left;
+	display: flex;
+  align-items: center;   /* centra verticalmente */
+  justify-content: center;
+}
+
+[class*="btncontacto-"]{
+	position: relative;
+	display: block;/*Redistribuye la figura proporcionalmente 
+	para que no quede espacios de margen*/	
+	padding: 5px;
+	margin: auto;
+}
+
+[class*="btnrombo-"]{
+	position: relative;
+	display: block;/*Redistribuye la figura proporcionalmente 
+	para que no quede espacios de margen*/	
+	margin: auto;
+	width: 100%;
+}
+
+
+/*creamos los porcentajes de las columnas*/
+
+
+/*Crear puntos de quiebre*/
+
+/*pantallas grandes - lg */
+
+@media(min-width: 1200px){
+
+	.col-lg-12{width: 100%;}
+	.col-lg-11{width: 91.66666667%;}
+	.col-lg-10{width: 83.33333333%;}
+	.col-lg-9{width: 75%;}
+	.col-lg-8{width: 66.66666667%;}
+	.col-lg-7{width: 58.33333333%;}
+	.col-lg-6{width: 50%;}
+	.col-lg-5{width: 41.66666667%;}
+	.col-lg-4{width: 33.33333333%;}
+	.col-lg-3{width: 25%;}
+	.col-lg-2{width: 16.66666667%;}
+	.col-lg-1{width: 8.33333333%;}
+	.btncontacto-lg{width: 50%;}
+	.btnrombo-lg{}
+
+	/*Para poder repartir de a 5 elementos*/
+	.col-lg-20{width: 20%}
+
+}
+
+/*Pantallas medianas - md*/
+
+@media(max-width: 1199px) and (min-width: 992px){
+
+	.col-md-12{width: 100%;}
+	.col-md-11{width: 91.66666667%;}
+	.col-md-10{width: 83.33333333%;}
+	.col-md-9{width: 75%;}
+	.col-md-8{width: 66.66666667%;}
+	.col-md-7{width: 58.33333333%;}
+	.col-md-6{width: 50%;}
+	.col-md-5{width: 41.66666667%;}
+	.col-md-4{width: 33.33333333%;}
+	.col-md-3{width: 25%;}
+	.col-md-2{width: 16.66666667%;}
+	.col-md-1{width: 8.33333333%;}
+	.btncontacto-md{width: 50%;}
+
+	/*Para poder repartir de a 5 elementos*/
+	.col-md-20{width: 20%}
+}
+
+/*Pantallas medianas - sm*/
+
+@media(max-width: 991px) and (min-width: 768px){
+
+	.col-sm-12{width: 100%;}
+	.col-sm-11{width: 91.66666667%;}
+	.col-sm-10{width: 83.33333333%;}
+	.col-sm-9{width: 75%;}
+	.col-sm-8{width: 66.66666667%;}
+	.col-sm-7{width: 58.33333333%;}
+	.col-sm-6{width: 50%;}
+	.col-sm-5{width: 41.66666667%;}
+	.col-sm-4{width: 33.33333333%;}
+	.col-sm-3{width: 25%;}
+	.col-sm-2{width: 16.66666667%;}
+	.col-sm-1{width: 8.33333333%;}
+	.btncontacto-sm{width: 60%;}
+}
+
+
+/*Pantallas extrapequeñas - xs*/
+
+@media(max-width: 768px){
+
+	.col-xs-12{width: 100%;}
+	.col-xs-11{width: 91.66666667%;}
+	.col-xs-10{width: 83.33333333%;}
+	.col-xs-9{width: 75%;}
+	.col-xs-8{width: 66.66666667%;}
+	.col-xs-7{width: 58.33333333%;}
+	.col-xs-6{width: 50%;}
+	.col-xs-5{width: 41.66666667%;}
+	.col-xs-4{width: 33.33333333%;}
+	.col-xs-3{width: 25%;}
+	.col-xs-2{width: 16.66666667%;}
+	.col-xs-1{width: 8.33333333%;}
+	.btncontacto-xs{width: 20%;}
+}
+
+
+/*Paginas*/
+
+/*Home*/
+
+/*Barra superior*/
+
+.barrasuperior{
+	background: #cfae7f;
+}
+
+/*para boton contacto*/
+
+.btncontenedor{
+	width: 100%;
+	position: relative;
+	margin: auto;
+	height: auto;
+}
+
+/*Menu*/
+.nav{
+	background: #fffef5;
+}
+/*botones de menu*/
+
+.btncontmarron1{
+	width: 100%;
+	position: relative;
+	margin: auto;
+	height: auto;
+	padding: 10px;
+}
+
+
+.btncontcirculo{
+	width: 100%;
+	position: relative;
+	margin: auto;
+	height: auto;
+}
+
+/*Espacio donde va ir el logo*/
+
+.circulologo{
+	position: relative;
+	width: 50%;
+	margin: auto;
+	height: auto;
+	border-radius: 50%;
+	background: #5e4633;
+	aspect-ratio: 1 / 1;
+}
+
+/*Parte inferior del menu*/
+
+.inferior{
+	background: #fffef5;
+}
+/*Pentagonos(Espacios de animacion)*/
+
+.btnpentagono{
+	width: 100%;
+	position: relative;
+	margin: auto;
+	height: auto;
+	vertical-align: middle;
+}
+
+.pentagono{
+	position: relative;
+	margin: auto;
+	display: flex;
+	width: 50%;
+}
+
+.contcajap{
+	width: 100%;
+	position: relative;
+	margin: auto;
+	height: auto;
+	padding: 15px;
+}
+
+.cajap{
+	position: relative;
+	width: 100%;
+	margin: auto;
+	border-radius: 15px;
+	padding: 10px;
+	background: #e6d4c4;
+}
+
+
+/*footer*/
+
+.barrainferior{
+	background: #cfae7f;
+	padding: 31px;
+}
+
+
+
+/*Palabras para la memoria*/
+
+
+
+/*lineas de espacio*/
+
+.lineap{
+	background: #f4f1d1;
+	padding: 40px;
+}
+
+.lineab{
+	background: #fffef5;
+	padding: 40px;
+}
+.lineab2{
+	background: #fffef5;
+	padding: 20px;
+}
+
+.main{
+	background: #f4f1d1;
+}
+
+.main2{
+	background: #fffef5;
+}
+
+/*formato caja principal*/
+.contcajatitulo{
+	width: 100%;
+	position: relative;
+	margin: auto;
+	height: auto;
+	padding: 15px;
+}
+
+
+.cajatitulo{
+	position: relative;
+	width: 100%;
+	margin: auto;
+	height: auto;
+	background: #e6d4c4;
+	padding: 170px 100px;
+	border-radius: 15px;
+}
+
+/*formato slide*/
+
+.contenedor-scroll {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carrusel {
+  display: flex;
+  width: 100%;
+}
+
+/*Desplazamiento*/
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-105%);
+  }
+}
+
+.carrusel-track {
+  display: flex;
+  width: max-content;
+  animation: scrollLeft 60s linear infinite;
+}
+
+.carrusel-track img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-right: 80px;
+  transition: transform 0.3s;
+}
+
+.carrusel-track img:hover{
+	transform: scale(1.1);
+}
+
+.imgslide{
+	width: 100%;
+	padding: 20px;
+}
+
+/*Espacio para comentarios*/
+
+.comentario{
+	width: 100%;
+	padding: 30px;
+	margin: auto;
+	margin-top:40px ;
+	background: #ab9480;
+	border-radius: 5px;
+}
+
+.btncontcirculop{
+	width: 100%;
+	position: relative;
+	margin: auto;
+	height: auto;
+}
+
+/*Espacio donde va ir el logo*/
+
+.circulologop{
+	position: relative;
+	width: 20%;
+	margin: auto;
+	height: auto;
+	border-radius: 50%;
+	background: #5e4633;
+	aspect-ratio: 1 / 1;
+}
+
+/*Expediente*/
+
+.lineabe{
+	background: #fffef5;
+	padding: 30px;
+}
+
+
+/*cajas informes*/
+.contcajainforme{
+	width: 100%;
+	position: relative;
+	margin: auto;
+	height: auto;
+	padding: 15px 60px 15px 0px;
+
+}
+
+.contcajainforme2{
+	width: 100%;
+	position: relative;
+	margin: auto;
+	height: auto;
+	padding: 15px 0px 15px 20px;
+
+}
+
+.cajainforme1{
+	position: relative;
+	width: 90%;
+	float: right;
+	margin: auto;
+	height: auto;
+	background: #e6d4c4;
+	padding-top: 250px;
+	padding-bottom: 250px;
+	border-radius: 10px;
+}
+
+.cajainforme2{
+	position: relative;
+	width: 90%;
+	margin: auto;
+	height: auto;
+	background: #e6d4c4;
+	padding: 120px 100px;
+	border-radius: 10px;
+}
+
+/*Para que las cajas que debajo una sobre otra*/
+.vertical-cajas{
+  display: flex;
+  flex-direction: column;
+}
+
+/*Teorias conspiranoicas*/
+.btnhexagono{
+	width: 100%;
+	position: relative;
+	margin: auto;
+	height: auto;
+	vertical-align: middle;
+}
+
+.hexagono{
+	position: relative;
+	margin: auto;
+	display: flex;
+	width: 70%;
+	padding: 20px;
+	transition: transform 0.3s;
+}
+
+.hexagono:hover{
+	transform: scale(1.1);
+}
+
+/*Videos*/
+.contvideo{
+	width: 100%;
+	margin: auto;
+	padding: 70px;
+}
+
+.video{
+	position: relative;
+	width: 100%;
+	padding-bottom: 50%;
+	height: 0;
+	overflow: hidden;
+
+}
+
+.video iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/*Para los circulos*/
+.contcirculo{
+	width: 100%;
+	position: relative;
+	margin: auto;
+	height: auto;
+	padding: 30px;
+}
+
+[class*="circulo-"]{
+	position: relative;
+	width: 65%;
+	margin: auto;
+	height: auto;
+	border-radius: 50%;
+	background: #5e4633;
+	aspect-ratio: 1 / 1;
+	transition: transform	0.3s;
+}
+
+[class*="circulo-"]:hover{
+	transform: scale(1.1);
+}
+
+.circulo-cafe{
+	background: #5e3d33;
+}
+
+.circulo-cafe2{
+	background: #5e4633;
+}
+
+.circulo-cafe3{
+	background: #774925;
+}
+
+.circulo-cafe4{
+	background: #826337;
+}
+
+
+/*quepasaria*/
+
+/*Parrafo inicial*/
+.cajaparrafoq{
+	position: relative;
+	width: 100%;
+	margin: auto;
+	height: auto;
+	background: #e6d4c4;
+	padding: 170px 100px;
+}
+
+/*Botón para comenzar recorrido*/
+.botoncomenzar{
+	position: relative;
+	width: 100%;
+	margin: auto;
+	height: auto;
+	background: #774925;
+	padding: 80px 100px;
+	border-radius: 15px;
+}
+
+/*contenedor de Instrucciones de esta página*/
+.continstrucciones{
+	width: 100%;
+	position: relative;
+	margin: auto;
+	height: auto;
+	padding: 15px 0px 15px 20px;
+}
+
+.instrucciones{
+	position: relative;
+	width: 90%;
+	margin: auto;
+	height: auto;
+	background: #e6d4c4;
+	padding: 250px 100px;
+	border-radius: 10px;
+}
+
+/*Botones de que pasaria si*/
+
+.contbotonquepasaria{
+	width: 100%;
+	position: relative;
+	margin: auto;
+	height: auto;
+	padding: 15px 60px 15px 0px;
+
+}
+.botonquepasaria{
+	position: relative;
+	width: 90%;
+	float: right;
+	margin: auto;
+	height: auto;
+	background: #9b7f66;
+	padding-top: 250px;
+	padding-bottom: 250px;
+	border-radius: 10px;
+}
+
+.contcajapq{
+	width: 100%;
+	position: relative;
+	margin: auto;
+	height: auto;
+	padding: 15px;
+}
+
+.cajapq{
+	position: relative;
+	width: 100%;
+	margin: auto;
+	padding: 10px;
+	background: #e6caa3;
+}
+
+/*Contextualizacion que pasaria si n°1 y slider galeria*/
+
+.contcontexto{
+	width: 100%;
+	position: relative;
+	margin: auto;
+	height: auto;
+	padding: 15px;
+}
+
+.contexto{
+	position: relative;
+	width: 90%;
+	margin: auto;
+	height: auto;
+	background: #e6d4c4;
+	padding: 400px 100px;
+	border-radius: 10px;
+}
+
+.contextogaleria{
+	position: relative;
+	width: 90%;
+	margin: auto;
+	height: auto;
+	background: #9b7f66;
+	padding: 100px 100px;
+	border-radius: 10px;
+}
+
+/*Slider galeria*/
+
+.sliderq {
+  overflow-x: scroll;
+  width: 100%;
+  height: auto;
+  cursor: grab;
+  border-radius: 10px;
+  overflow-y: hidden;
+  -ms-overflow-style: none;  /* IE y Edge */
+  scrollbar-width: none;     /* Firefox */
+  cursor: grab;
+
+}
+
+.slider-trackq {
+  display: flex;
+  transition: transform 0.7s ease;
+  width: max-content;
+}
+
+.slider-trackq img {
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+  margin-right: 10px;
+  border-radius: 10px;
+  flex-shrink: 0;
+  user-select: none;
+}
+
+/*Cartas*/
+
+
+.contenedor-cartas {
+  overflow: hidden;
+  width: 100%;
+}
+
+.cartas {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; /* Permite que los elementos bajen de línea */
+  flex-direction: row; /* Pone los elementos en filas horizontales */
+  width: 100%;
+  gap: 5px;/*Para que siempre haya espaciado entre las cartas*/
+}
+
+
+/* Contenedor de la carta con perspectiva *//*Hecho con chatgpt*/
+
+.contcarta{
+	perspective: 1000px;
+
+	width: 30%;
+	margin: auto;
+	height: auto;
+	padding: 15px 0px;
+}
+
+.carta{
+	position: relative;
+	width: 100%;
+	margin: auto;
+	height: auto;
+	padding: 170px 80px;
+	transition: transform 0.6s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Al hacer clic se aplica esta clase para girar */
+.carta.volteada {
+  transform: rotateY(180deg);
+}
+
+/* Frente y reverso */
+.carta::before,
+.carta::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  top: 0;
+  left: 0;
+}
+
+/* Reverso (por defecto visible) */
+.carta::before {
+  background-color: #c0906b; /* reverso */
+}
+
+/*Frente (la imagen o símbolo de la carta) */
+.carta::after {
+  background-color: #000000; /* puedes usar imagen de fondo también */
+  transform: rotateY(180deg); /* escondido al inicio */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Imágenes diferentes según el data-pareja */
+.carta[data-pareja="1"]::after {
+  background-image: url('../images/ave1.jpg');
+}
+
+.carta[data-pareja="2"]::after {
+  background-image: url('../images/ave2.jpg');
+}
+
+.carta[data-pareja="3"]::after {
+  background-image: url('../images/ave3.jpg');
+}
+
+.carta[data-pareja="4"]::after {
+  background-image: url('../images/ave2.jpg');
+}
+
+.carta[data-pareja="5"]::after {
+  background-image: url('../images/ave3.jpg');
+}
+
+.carta[data-pareja="6"]::after {
+  background-image: url('../images/ave1.jpg');
+}
+
+.carta[data-pareja="7"]::after {
+  background-image: url('../images/ave2.jpg');
+}
+
+.carta[data-pareja="8"]::after {
+  background-image: url('../images/ave1.jpg');
+}
+
+.carta[data-pareja="9"]::after {
+  background-image: url('../images/ave3.jpg');
+}
+
+/*Parrafos de consecuencias*/
+
+/*Popups para mensajes*//*Hecho con chatgpt*/
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-contenido {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 600px;
+  text-align: justify;
+  font-size: 16px;
+}
+
+.contcajapqc{
+	width: 100%;
+	position: relative;
+	margin: auto;
+	height: auto;
+}
+
+.cajapqc{
+	position: relative;
+	width: 100%;
+	margin: auto;
+	padding: 10px;
+	background: #e6caa3;
+}
+
+
+/*Galeria*/
+
+
+/*formato caja principal*/
+.contcajatitulog{
+	width: 100%;
+	position: relative;
+	margin: auto;
+	height: auto;
+	padding: 15px;
+}
+
+
+.cajatitulog{
+	position: relative;
+	width: 100%;
+	margin: auto;
+	height: auto;
+	background: #e6d4c4;
+	padding: 170px 100px;
+	border-radius: 15px;
+}
